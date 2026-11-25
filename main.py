@@ -35,6 +35,8 @@ def validate_output(text):
         errors.append("text must carry the setup object")
     if "nothing to say" not in text:
         errors.append("text must carry the closing twist")
+    if "turns out" not in text:
+        errors.append("text must carry the twist pivot")
     return errors
 
 
